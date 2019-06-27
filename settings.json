@@ -1,0 +1,27 @@
+{
+    /*---- Vim setup  -------*/
+    "workbench.list.automaticKeyboardNavigation": false,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": false,
+    "vim.handleKeys": {
+        "<S-u>": false
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "U" /*--- Undo ---*/
+            ],
+            "after": [
+                "<C-r>"
+            ],
+        },
+        {
+            "before": [
+                "`" /*--- Toggle sidebar, nerdTree style ---*/
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        }
+    ]
+}
